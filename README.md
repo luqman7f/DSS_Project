@@ -47,65 +47,26 @@ This project is a **web-based implementation of a Digital Signature Scheme (DSS)
 
 ---
 
-## **Installation Instructions** ⚡
+## **How It Works** 🔍
 
-### **Prerequisites** 📋
+1. **Sign a Message** ✍️:  
+   - Users input a message on the frontend, which is then encrypted and signed using RSA.
+   
+2. **Verify a Signature** 🔏:  
+   - The signed message can be verified against the public key using the verification process on the frontend.
+   
+3. **Encryption & Storage** 🔐:  
+   - Messages are encrypted using AES-256 for secure storage and transmission.
 
-- **Python 3.x**
-- **Flask**
-- **Cryptography libraries** (e.g., `pycryptodome`)
+4. **Password Security** 🔒:  
+   - User credentials are hashed using bcrypt before storing them in the system for secure authentication.
 
-### **Steps to Set Up** 🔧
-
-1. **Clone the repository**:
-
-    ```bash
-    git clone https://github.com/luqman7f/DSS_Project.git
-    ```
-
-2. **Navigate to the project folder**:
-
-    ```bash
-    cd DSS_Project
-    ```
-
-3. **Install the required dependencies**:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. **Run the Flask application**:
-
-    ```bash
-    python app.py
-    ```
-
-5. **Open the application**:  
-   - Go to **`http://127.0.0.1:5000/`** in your web browser.
+5. **Signature Verification** ✅:  
+   - Once a message is signed, its authenticity can be verified by comparing its SHA-256 hash with the signature.
 
 ---
 
-## **Contributing** 🤝
+## **Project Structure** 🗂️
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-name`).
-3. Make your changes and commit them (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature-name`).
-5. Create a new **Pull Request**.
-
----
-
-## **License** 📜
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## **Contact** 📬
-
-For any questions or feedback, feel free to reach out via:
-
-- **Email**: [luqmanmohd009@gmail.com](mailto:luqmanmohd009@gmail.com)
-- **GitHub**: [luqman7f](https://github.com/luqman7f)
+Here's a quick overview of the project structure:
 
