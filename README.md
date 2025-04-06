@@ -3,6 +3,7 @@
 ## **Overview** 📜
 
 This project is a web-based Digital Signature System (DSS) that allows users to sign and verify messages using RSA cryptography and SHA-256 hashing. It provides a simple graphical interface built with Flask and HTML/CSS for secure and easy-to-use digital signature functionality.
+
 ---
 
 ## 🎥 Project Demo Video
@@ -11,59 +12,54 @@ This project is a web-based Digital Signature System (DSS) that allows users to 
 
 ---
 
-✨ Features
-🔐 RSA Digital Signature
-Sign and verify messages using RSA public-private key cryptography.
+## ✨ Features
 
-🔎 SHA-256 Hashing
-Ensures message integrity during signature verification.
+- 🔐 **RSA Digital Signature**  
+  Sign and verify messages using RSA public-private key cryptography.
 
-🌐 Web Interface
-Built with Flask for backend and HTML/CSS for the frontend.
+- 🔎 **SHA-256 Hashing**  
+  Ensures message integrity during signature verification.
 
-🧾 Signature Preview
-View base64-encoded digital signature and SHA-256 hash.
+- 🌐 **Web Interface**  
+  Built with Flask for backend and HTML/CSS for the frontend.
 
-✅ Verification Feedback
-Shows popup messages confirming whether the signature is valid or not.
+- 🧾 **Signature Preview**  
+  View base64-encoded digital signature and SHA-256 hash.
 
----
-
-🛠️ Technologies Used
-Python 3.x
-
-Flask (for backend and routing)
-
-HTML/CSS (for frontend)
-
-JavaScript (for interactive elements like popups)
-
-PyCryptodome (for RSA and SHA-256 operations)
-
-Base64 (for signature encoding/decoding)
+- ✅ **Verification Feedback**  
+  Shows popup messages confirming whether the signature is valid or not.
 
 ---
 
-## **How It Works** 🔍
+## 🛠️ Technologies Used
 
-1. **Sign a Message** ✍️:  
-   - Users input a message on the frontend, which is then encrypted and signed using RSA.
-   
-2. **Verify a Signature** 🔏:  
-   - The signed message can be verified against the public key using the verification process on the frontend.
-   
-3. **Encryption & Storage** 🔐:  
-   - Messages are encrypted using AES-256 for secure storage and transmission.
-
-4. **Password Security** 🔒:  
-   - User credentials are hashed using bcrypt before storing them in the system for secure authentication.
-
-5. **Signature Verification** ✅:  
-   - Once a message is signed, its authenticity can be verified by comparing its SHA-256 hash with the signature.
+- **Python 3.x**
+- **Flask** (for backend and routing)
+- **HTML/CSS** (for frontend UI)
+- **JavaScript** (for user interaction popups)
+- **PyCryptodome** (for RSA and SHA-256 cryptographic functions)
+- **Base64** (for encoding/decoding signatures)
 
 ---
 
-## **Project Structure** 🗂️
+## 🔍 How It Works
+
+1. **Sign a Message** ✍️  
+   User types a message → the app signs it using RSA private key → hash is generated using SHA-256.
+
+2. **Verify a Signature** 🔏  
+   The app verifies the message against the RSA public key and confirms its integrity using SHA-256.
+
+3. **Preview Results** 🧾  
+   Signature and hash are shown in the UI for transparency.
+
+4. **Verification Feedback** ✅  
+   User gets confirmation via popup whether the signature is valid or invalid.
+
+---
+
+## 🗂️ Project Structure
+
 
 Here's a quick overview of the project structure:
 ```
@@ -89,21 +85,24 @@ DSS_Project/
 
 ---
 
-## **Installation Instructions** ⚡
 
-### **Prerequisites** 📋
+---
 
-- **Python 3.x**
-- **Flask**
-- **Cryptography libraries** (e.g., `pycryptodome`)
+## ⚡ Installation Instructions
 
-### **Steps to Set Up** 🔧
+### 📋 Prerequisites
+
+- Python 3.x
+- Flask
+- pycryptodome
+
+### 🔧 Steps to Set Up
 
 1. **Clone the repository**:
 
-    ```bash
-    git clone https://github.com/luqman7f/DSS_Project.git
-    ```
+   ```bash
+   git clone https://github.com/luqman7f/DSS_GUI_PROJECT.git
+
 
 2. **Navigate to the project folder**:
 
