@@ -70,3 +70,89 @@ This project is a **web-based implementation of a Digital Signature Scheme (DSS)
 
 Here's a quick overview of the project structure:
 
+DSS_Project/
+│
+├── app.py                # Flask application and backend logic
+├── requirements.txt      # Required dependencies for the project
+├── templates/            # Frontend HTML files
+│   └── index.html        # Main user interface for signing and verifying messages
+│
+├── static/               # Static files for styling (CSS, JavaScript)
+│   ├── styles.css        # CSS styles for the frontend
+│   └── script.js         # JavaScript for handling frontend logic
+│
+├── crypto/               # Cryptographic functions
+│   ├── rsa.py            # RSA signing and verification functions
+│   ├── aes.py            # AES-256 encryption/decryption functions
+│   └── bcrypt_hash.py    # bcrypt hashing functions for password security
+│
+└── README.md             # Project documentation
+
+
+---
+
+## **Installation Instructions** ⚡
+
+### **Prerequisites** 📋
+
+- **Python 3.x**
+- **Flask**
+- **Cryptography libraries** (e.g., `pycryptodome`)
+
+### **Steps to Set Up** 🔧
+
+1. **Clone the repository**:
+
+    ```bash
+    git clone https://github.com/luqman7f/DSS_Project.git
+    ```
+
+2. **Navigate to the project folder**:
+
+    ```bash
+    cd DSS_Project
+    ```
+
+3. **Install the required dependencies**:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Run the Flask application**:
+
+    ```bash
+    python app.py
+    ```
+
+5. **Open the application**:  
+   - Go to **`http://127.0.0.1:5000/`** in your web browser.
+
+---
+
+## **Contributing** 🤝
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Make your changes and commit them (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Create a new **Pull Request**.
+
+---
+
+## **📄 License**
+
+This project is for **educational** and **research purposes**. Use responsibly.
+
+For more details, refer to the **LICENSE** file in the repository.
+
+---
+
+## **Contact** 📬
+
+For any questions or feedback, feel free to reach out via:
+
+- **Email**: [luqmanmohd009@gmail.com](mailto:luqmanmohd009@gmail.com)
+- **GitHub**: [luqman7f](https://github.com/luqman7f)
+
+
