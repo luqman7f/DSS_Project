@@ -2,8 +2,7 @@
 
 ## **Overview** 📜
 
-This project is a **web-based implementation of a Digital Signature Scheme (DSS)** for secure data handling. It integrates **cryptographic techniques** to provide a secure interface for **signing** and **verifying messages**. The **backend** is built with **Flask**, while the **frontend** uses **HTML**, **CSS**, and **JavaScript** to create a user-friendly interface. The project utilizes several cryptographic algorithms such as **RSA**, **AES-256**, **bcrypt**, and **SHA-256** to ensure high-level **data security**.
-
+This project is a web-based Digital Signature System (DSS) that allows users to sign and verify messages using RSA cryptography and SHA-256 hashing. It provides a simple graphical interface built with Flask and HTML/CSS for secure and easy-to-use digital signature functionality.
 ---
 
 ## 🎥 Project Demo Video
@@ -12,44 +11,36 @@ This project is a **web-based implementation of a Digital Signature Scheme (DSS)
 
 ---
 
-## **Features** ⚙️
+✨ Features
+🔐 RSA Digital Signature
+Sign and verify messages using RSA public-private key cryptography.
 
-- **Digital Signature Scheme** 🖊️:  
-  - Users can **sign messages** and **verify signatures** using **RSA encryption**.
+🔎 SHA-256 Hashing
+Ensures message integrity during signature verification.
 
-- **AES-256 Encryption** 🔒:  
-  - Data is securely **stored** and **transmitted** using **AES-256 encryption**.
+🌐 Web Interface
+Built with Flask for backend and HTML/CSS for the frontend.
 
-- **Password Hashing** 🔑:  
-  - **bcrypt** is used for **password hashing**, ensuring **secure storage** of user credentials.
+🧾 Signature Preview
+View base64-encoded digital signature and SHA-256 hash.
 
-- **Message Verification** 🧐:  
-  - The system **verifies** the authenticity of the signed message using **SHA-256 hashing**.
-
-- **Frontend Interface** 🎨:  
-  - A clean and intuitive **frontend** for message signing, signature preview, and verification.
-
-- **Server Integration** 🌐:  
-  - The application communicates with the server to validate signatures and messages.
+✅ Verification Feedback
+Shows popup messages confirming whether the signature is valid or not.
 
 ---
 
-## **Technologies Used** 💻
+🛠️ Technologies Used
+Python 3.x
 
-- **Backend**:  
-  - **Flask** (Python)
+Flask (for backend and routing)
 
-- **Frontend**:  
-  - **HTML5**, **CSS3**, **JavaScript**
+HTML/CSS (for frontend)
 
-- **Cryptography**:  
-  - **RSA** for digital signatures  
-  - **AES-256** for encryption  
-  - **bcrypt** for password hashing  
-  - **SHA-256** for message hashing
+JavaScript (for interactive elements like popups)
 
-- **Email Transmission** 📧:  
-  - **SMTP** for sending emails securely
+PyCryptodome (for RSA and SHA-256 operations)
+
+Base64 (for signature encoding/decoding)
 
 ---
 
