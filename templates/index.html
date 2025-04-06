@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DSS Web App</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Digital Signature Web App</h1>
+
+    <form method="POST">
+      <h3>Message:</h3>
+      <textarea name="message" rows="6" readonly>{{ message }}</textarea><br><br>
+
+      <button type="submit" name="action" value="sign">Sign Message</button>
+      <button type="submit" name="action" value="verify">Verify Signature</button>
+    </form>
+
+    {% if signature_b64 %}
+      <h3>Base64 Signature:</h3>
+      <textarea rows="4" readonly>{{ signature_b64 }}</textarea>
+    {% endif %}
+
+    {% if verification_result is not none %}
+      <h3>Verification Result:</h3>
+      {% if verification_result %}
+        <p style="color: green;">✅ Signature Verified Successfully</p>
+      {% else %}
+        <p style="color: red;">❌ Signature Verification Failed</p>
+      {% endif %}
+    {% endif %}
+  </div>
+</body>
+</html>
+
