@@ -69,7 +69,7 @@ This project is a **web-based implementation of a Digital Signature Scheme (DSS)
 ## **Project Structure** 🗂️
 
 Here's a quick overview of the project structure:
-
+```
 DSS_Project/
 │
 ├── app.py                # Flask application and backend logic
@@ -87,7 +87,7 @@ DSS_Project/
 │   └── bcrypt_hash.py    # bcrypt hashing functions for password security
 │
 └── README.md             # Project documentation
-
+```
 
 
 ---
